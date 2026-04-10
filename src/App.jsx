@@ -1,33 +1,25 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
         <div>
-          <h1>Get started</h1>
-          <p>
+          <p className="text-orange-400 dark:text-sky-400 border-2 border-blue-600 p-4 w-80   mx-auto mt-1 text-center text-lg font-bold bg-yellow-100 rounded-lg shadow-md mb-1">
             This is my first Vite + React project, and it works! . 
           </p>
         </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+        <div className="w-80 bg-white shadow-lg rounded-xl overflow-hidden mx-auto">
+          <img src="girl.jpg" alt="not found  " />
+        </div>
+        <div className='text-center mt-4 border-2 border-green-500 p-4 w-80 mx-auto text-lg font-semibold bg-gray-100 rounded-lg shadow-md'>
+          <button className='hover:bg-pink-500 text-green-500 ' onClick={()=>alert('clicked')}>OPEN ME</button>
+        </div>
+        
+
 
      
     </>
